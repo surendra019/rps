@@ -9,8 +9,9 @@ const { clear } = require("console")
 const websocketServer = require("websocket").server
 const httpServer = http.createServer()
 
+const port = process.env.PORT || 3055
 // change this while deploying the server
-httpServer.listen(3055, () => console.log("Listening on port 3055"))
+httpServer.listen(port, () => console.log(`Listening on port ${port}`))
 
 
 
